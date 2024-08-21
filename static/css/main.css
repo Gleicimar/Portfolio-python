@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+ 
+}
+html,body{
+    min-height:100%;
+    width:100%;
+}
+body{
+    background-image:url('../image/background_tech.svg');
+    background-size:cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    /*background-position:center; /* Centraliza a imagem */
+    background-repeat:no-repeat;
+}
+
+div.flash{
+    font-size: 20px;
+        background: white;
+    text-align: center;
+}
+.error{
+    color: white;
+    background-color:red;
+
+}
+.success{
+    color:green;
+    background-color:lightgreen
+}
+
+.center{
+    max-width:1280px;
+    display:flex;
+    width: 100%;
+    margin:0 auto;
+    flex-wrap:wrap;
+
+}
+a,ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.cabecalho{
+    height: 10vh;
+    padding:0 30px;
+    place-content: center;
+    background-color: #64b5f6;
+}
+.cabecalho>.center{
+    justify-content:space-between;
+    align-items: center;
+}
+
+.cabecalho a{
+    font-size: 23px;
+    color:#1a237e;
+    padding:20px;
+    transition: color 0.3s ease; /* Ajuste de transição */
+
+}
+
+.cabecalho a:hover{
+    color: black;
+    transition: color 0.3s ease; /* Ajuste de transição */
+}
+
+.sobre{
+    color:rgb(255, 255, 255);
+    display:flex;
+    font-size: 30px;
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+}
+.Add{
+    width:100%;
+    font-size: 20px;
+    color:white
+}
+.Add:hover{
+    color:#1a237e;
+}
+.editar_label label{
+    font-size:21px;
+    color:white
+}
+.sobre h2{
+    text-align:center;
+    width:100%
+}
+
+.sobre span{
+    font-size: 17px;
+}
+
+.sobre p{
+    font-size:18px;
+    text-align:justify;
+    width:100%;
+    padding:20px;
+
+}
+.perfil_wrapper{
+    display:flex;
+    flex-direction:column;
+    }
+    .perfil_wrapper img{
+    max-width:300px;
+    width:100%;
+    height: 400px;
+        padding:20px
+    }
+.skills h2 {
+   color:blue
+}
+.skill_wrapper{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+.skill_wrapper h4{
+    font-size:19px;
+    color:darkblue;
+    padding:12px
+}
+
+.progress{
+    border:1px solid #ccc;
+    height:30px;
+    width:400px;
+    font-size: 15px;
+    margin:20px auto;
+    text-align:center;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    background:#ccc;
+    height:30px;
+    width:0%;
+    border-radius:10px;
+    transition:width 0.5s ease-out
+}
+
+/*seção login*/
+section.login{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    place-items: center;
+    height:100vh;
+    width:100%;
+    color:white;
+    font-size: 30px;
+}
+.login h1{
+    width:100%;
+    text-align:center;
+}
+form{
+    display:flex;
+    margin:20px auto;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    max-width: 600px;
+    height:100%;
+    padding:20px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+form input{
+    width:100%;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    width:100%;
+    padding-left:12px;
+    font-size:19px;
+    resize:vertical;
+    min-height: auto 30vh;
+}
+/*-------------------------------*/
+/*Projetos*/
+section.projetos{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    min-height: 100%;
+    color:white;
+    font-size: 30px;
+}
+.projetos h1{
+    width:100%;
+    margin:30px 0;
+    text-align:center;
+    color: white;
+}
+.projetos p.t1{
+    padding:30px;
+}
+.projetos-wrapper{
+    margin: 10px ;
+}
+.projetos h2{
+    font-size:20px;
+    color:#1a237e
+}
+.projetos-wrapper p{
+    font-size:15px;
+    color:#ffffff;
+    margin:10px
+}
+.projetos-wrapper a{
+    color:#1a237e;
+    font-size:15px;
+    margin:10px
+}
+.projetos img{
+    max-width:100%;
+    width:300px; 
+}
+/*---------------------------------------------------------*/
+.adicionar_projeto{
+    min-height: 100%;
+}
+.adicionar_projeto h2{
+    text-align: center;
+    padding: 20px;
+}
+
+span.editar{
+    color:#fff;
+    font-size:19px
+}
+/*-----------Admin-------------------------------------*/
+section.admin{
+    min-height: 100%;
+}
+.projetos-wrapper p{
+    font-size:15px;
+    color:#ffffff;
+    margin:10px
+}
+.projetos-wrapper a{
+    color:#1a237e;
+    font-size:15px;
+    margin:10px
+}
+.projetos img{
+    max-width:100%;
+    width:300px; 
+}
+input[type="file"]{
+    color: white;
+}
+/*-------Contatos------*/
+.contatos{
+    min-height: 100%;
+}
+.row h1{
+    display:flex;
+    place-content:center;
+    color:white;
+}
+/*-------------------------------------------------*/
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:2px solid #ccc;
+    color:white;
+    font-size:20px
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="center">
+            <h3> <a href='/logout'><i class="fas fa justify">Gleicimar Ribeiro Pereira</i></a></h3>
+            <div>
+                <a href="/">Home</a>
+                <a href="/projetos">Projetos</a>
+                <a href="/contatos">Contatos</a>
+            </div>
+        </div><!--center-->
+    </header><!--cabecalho-->
+
+    {% with messages = get_flashed_messages(with_categories=True)%}
+        {% if messages %}
+        <ul class="flasshes">
+        {% for category, message in messages %}
+            <li class="{{category}}">{{message}}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {%endwith %}
+    
+    {% block content %}{% endblock %}
+
+  
+
+    <footer>
+        <div class="center">
+            <p>Desenvolvido por Gleicimar Ribeiro Pereira</p>
+        </div>
+    </footer>
+</body>
+</html>

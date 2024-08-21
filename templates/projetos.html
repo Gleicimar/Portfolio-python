@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% block content %}
+
+<section class="projetos">
+    <h1>Projetos  {{session.get('usuario')}} </h1>
+    <p class="t1">Esses são alguns dos meus projetos.</p>
+    <div class="center">
+
+      {%if 'usuario_id' in session %}
+        <a href="{{ url_for('adicionar_projeto') }}" class="Add">Adicionar</a>
+        <span><a class="editar" href="{{ url_for('editar_projeto', projeto_id=projeto.id) }}" class="Add">Editar</a></span>
+
+            {% for projeto in projetos %}
+                <div class="projetos-wrapper">
+                    <h2>{{ projeto.nome_projeto }} - {{projeto.status}}</h2>
+                    <p>{{ projeto.descricao }}</p>
+                    {% if projeto.imagem %}
+                        <img src="{{ url_for('static', filename='uploads/' + projeto.imagem) }}" alt="{{ projeto.nome_projeto }}">
+                    {% else %}
+                        <img src="{{ url_for('static', filename='uploads/default_image.jpg') }}" alt="Imagem padrão">
+                    {% endif %}
+                </div> 
+
+            {% endfor %}
+
+         {%else%}           
+            {% for projeto in projetos %}
+                <div class="projetos-wrapper">
+                    <h2>{{ projeto.nome_projeto }} - {{projeto.status}}</h2>
+                    <p>{{ projeto.descricao }}</p>
+                    {% if projeto.imagem %}
+                        <img src="{{ url_for('static', filename='uploads/' + projeto.imagem) }}" alt="{{ projeto.nome_projeto }}">
+                    {% else %}
+                        <img src="{{ url_for('static', filename='uploads/default_image.jpg') }}" alt="Imagem padrão">
+                    {% endif %}
+                </div> 
+            {% endfor %}
+        {%endif%}
+    </div>
+</section>
+
+{% endblock %}
