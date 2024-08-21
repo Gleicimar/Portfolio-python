@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% block content %}
+    <section class="adicionar_projeto projetos">
+        <h2>Adicione novos projetos {{session.get('usuario')}}</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="projeto_nome">Nome do Projeto:</label>
+            <input type="text" id="projeto_nome" name="projeto_nome" required>
+            <label for="projeto_descricao">Descrição do Projeto:</label>
+            <textarea id="projeto_descricao" name="descricao" required></textarea>
+            <label for="projeto_imagem">Imagem do Projeto:</label>
+            <input type="file" id="projeto_imagem" name="imagem">
+            <input type="submit" value="Adicionar">
+        </form>
+    </section>
+{% endblock %}

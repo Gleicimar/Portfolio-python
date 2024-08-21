@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
+<div class="center editar_label projetos">
+    <h1>Editar projetos</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="projeto_nome">Nome do Projeto</label>
+        <input type="text" id="projeto_nome" name="projeto_nome" value="{{ projeto.nome_projeto }}">
+        
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao">{{ projeto.descricao}}</textarea>
+        
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="{{ projeto.status }}">
+        
+        <label for="imagem">Imagem do Projeto</label>
+        <input type="file" id="imagem" name="imagem">
+        
+        <input type="submit" value="Salvar Alterações">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" height="100%" width="100%">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a" />
+      <stop offset="100%" style="stop-color:#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+
+  <g stroke="#64748b" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="0" x2="1000" y2="1000">
+      <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="10s" repeatCount="indefinite" />
+    </line>
+    <line x1="1000" y1="0" x2="0" y2="1000">
+      <animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="10s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <g fill="#38bdf8">
+    <circle cx="200" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="800" cy="300" r="3"><animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1s" /></circle>
+    <circle cx="200" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="800" cy="300" r="3"><animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1s" /></circle>
+    <circle cx="500" cy="700" r="3"><animate attributeName="r" values="3;5;3" dur="5s" repeatCount="indefinite" begin="2s" /></circle>
+    <circle cx="150" cy="800" r="3"><animate attributeName="r" values="3;5;3" dur="6s" repeatCount="indefinite" begin="1.5s" /></circle>
+    <circle cx="900" cy="750" r="3"><animate attributeName="r" values="3;5;3" dur="3.5s" repeatCount="indefinite" begin="0.5s" /></circle>
+    <circle cx="400" cy="100" r="3"><animate attributeName="r" values="3;5;3" dur="4.5s" repeatCount="indefinite" begin="2.5s" /></circle>
+    <circle cx="700" cy="600" r="3"><animate attributeName="r" values="3;5;3" dur="5.5s" repeatCount="indefinite" begin="1.2s" /></circle>
+    <circle cx="100" cy="500" r="3"><animate attributeName="r" values="3;5;3" dur="3.8s" repeatCount="indefinite" begin="0.8s" /></circle>
+    <circle cx="600" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4.2s" repeatCount="indefinite" begin="1.7s" /></circle>
+    <circle cx="300" cy="900" r="3"><animate attributeName="r" values="3;5;3" dur="5.2s" repeatCount="indefinite" begin="0.3s" /></circle>
+     <circle cx="200" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="800" cy="300" r="3"><animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1s" /></circle>
+    <circle cx="200" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="800" cy="300" r="3"><animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1s" /></circle>
+    <circle cx="500" cy="700" r="3"><animate attributeName="r" values="3;5;3" dur="5s" repeatCount="indefinite" begin="2s" /></circle>
+    <circle cx="150" cy="800" r="3"><animate attributeName="r" values="3;5;3" dur="6s" repeatCount="indefinite" begin="1.5s" /></circle>
+    <circle cx="900" cy="750" r="3"><animate attributeName="r" values="3;5;3" dur="3.5s" repeatCount="indefinite" begin="0.5s" /></circle>
+    <circle cx="400" cy="100" r="3"><animate attributeName="r" values="3;5;3" dur="4.5s" repeatCount="indefinite" begin="2.5s" /></circle>
+    <circle cx="700" cy="600" r="3"><animate attributeName="r" values="3;5;3" dur="5.5s" repeatCount="indefinite" begin="1.2s" /></circle>
+    <circle cx="100" cy="500" r="3"><animate attributeName="r" values="3;5;3" dur="3.8s" repeatCount="indefinite" begin="0.8s" /></circle>
+    <circle cx="600" cy="200" r="3"><animate attributeName="r" values="3;5;3" dur="4.2s" repeatCount="indefinite" begin="1.7s" /></circle>
+    <circle cx="300" cy="900" r="3"><animate attributeName="r" values="3;5;3" dur="5.2s" repeatCount="indefinite" begin="0.3s" /></circle>
+
+  </g>
+
+  <g stroke="#38bdf8" stroke-width="0.5" opacity="0.6">
+    <line x1="200" y1="200" x2="800" y2="300"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8s" repeatCount="indefinite" /></line>
+    <line x1="800" y1="300" x2="500" y2="700"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7s" repeatCount="indefinite" begin="1s" /></line>
+    <line x1="200" y1="200" x2="800" y2="300"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8s" repeatCount="indefinite" /></line>
+    <line x1="800" y1="300" x2="500" y2="700"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7s" repeatCount="indefinite" begin="1s" /></line>
+    <line x1="500" y1="700" x2="150" y2="800"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9s" repeatCount="indefinite" begin="2s" /></line>
+    <line x1="500" y1="700" x2="150" y2="800"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9s" repeatCount="indefinite" begin="2s" /></line>
+    <line x1="150" y1="800" x2="900" y2="750"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="6s" repeatCount="indefinite" begin="3s" /></line>
+    <line x1="400" y1="100" x2="700" y2="600"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8.5s" repeatCount="indefinite" begin="1.5s" /></line>
+    <line x1="100" y1="500" x2="600" y2="200"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7.5s" repeatCount="indefinite" begin="2.5s" /></line>
+    <line x1="300" y1="900" x2="900" y2="750"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9.5s" repeatCount="indefinite" begin="0.5s" /></line>
+    <line x1="200" y1="200" x2="600" y2="200"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="6.5s" repeatCount="indefinite" begin="1.8s" /></line>
+    <line x1="800" y1="300" x2="700" y2="600"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8.2s" repeatCount="indefinite" begin="3.2s" /></line>
+    <line x1="500" y1="700" x2="300" y2="900"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7.8s" repeatCount="indefinite" begin="2.7s" /></line>
+     <line x1="200" y1="200" x2="800" y2="300"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8s" repeatCount="indefinite" /></line>
+    <line x1="800" y1="300" x2="500" y2="700"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7s" repeatCount="indefinite" begin="1s" /></line>
+    <line x1="200" y1="200" x2="800" y2="300"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8s" repeatCount="indefinite" /></line>
+    <line x1="800" y1="300" x2="500" y2="700"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7s" repeatCount="indefinite" begin="1s" /></line>
+    <line x1="500" y1="700" x2="150" y2="800"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9s" repeatCount="indefinite" begin="2s" /></line>
+    <line x1="500" y1="700" x2="150" y2="800"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9s" repeatCount="indefinite" begin="2s" /></line>
+    <line x1="150" y1="800" x2="900" y2="750"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="6s" repeatCount="indefinite" begin="3s" /></line>
+    <line x1="400" y1="100" x2="700" y2="600"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8.5s" repeatCount="indefinite" begin="1.5s" /></line>
+    <line x1="100" y1="500" x2="600" y2="200"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7.5s" repeatCount="indefinite" begin="2.5s" /></line>
+    <line x1="300" y1="900" x2="900" y2="750"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="9.5s" repeatCount="indefinite" begin="0.5s" /></line>
+    <line x1="200" y1="200" x2="600" y2="200"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="6.5s" repeatCount="indefinite" begin="1.8s" /></line>
+    <line x1="800" y1="300" x2="700" y2="600"><animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="8.2s" repeatCount="indefinite" begin="3.2s" /></line>
+    <line x1="500" y1="700" x2="300" y2="900"><animate attributeName="stroke-dasharray" from="1000,0" to="0,1000" dur="7.8s" repeatCount="indefinite" begin="2.7s" /></line>
+  </g>
+</svg>

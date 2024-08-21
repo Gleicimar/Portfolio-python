@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+ {% block content %}
+    <section class="sobre">
+        <div class="center">
+            <h2>Quem sou eu</h2>
+            <div class="perfil">
+                <div class="perfil_wrapper">
+                    <img src="./static/image/background.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                        <span>
+                            <strong>Gleicimar Ribeiro</strong>
+                        </span>
+                    </div>
+                    <p>
+                      Meu nome é Gleicimar,atuo como desenvolvedor de site e aplicativos já,tem um tempo,fiz alguns projetos pessoais que não
+                      foram postados no github,ou qualquer outra plataforma,busco sempre me aprimorar e ficar sempre por dentro das novas tecnologias
+                      o meu site,portfolio,foi construido usando python flask,html5,css3,tem imagens no formato svg. 
+                    </p>   
+            </div>
+        </div>
+    </section>
+    <section class="skills sobre">
+        <div class="center">
+            <h2>Habilidades</h2>
+            <div class="skill">
+                <div class="skill_wrapper">
+                    <h4>Html</h4> 
+                    <div class="progress" id ="progresso">
+                     <div class="progress-bar" id="progress_bar" role="progressbar">0%</div>
+                    </div>
+                    <button onclick="incrementarProgresso()">+</button>
+                </div>
+                <div class="skill_wrapper">
+                    <h4>Css3</h4> 
+                    <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <h4>Php</h4> 
+                    <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <h4>Javascript</h4> 
+                    <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <h4>Nodejs</h4> 
+                    <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <h4>Python</h4> 
+                    <div class="progress">
+                     <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+
+
+
+
+
+{%endblock%}
